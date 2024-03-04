@@ -5,7 +5,7 @@ sequenceDiagram
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     Note right of browser: Browser sends the written note to the server
     activate server
-    server-->>browser: Requests to reload to "/exampleapp/notes"
+    server-->>browser: Requests to redirect to "/exampleapp/notes"
     deactivate server
     note left of server: Server pushes data in the notes object and asks browser to reload the page to view changes.
 
